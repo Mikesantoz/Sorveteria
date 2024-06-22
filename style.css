@@ -1,37 +1,55 @@
+/* para todos os elementos */
+*{
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+/* Para todos os elementos */
+
+/* cabeçalho */
 header{
-    background-color: rgb(255, 235, 175);
+    background-color: rgba(125, 124, 214, 0.6);
     position: fixed;
     width: 100%;
     top: 0px;
     left: 0;
-    border: solid 2px black;
+}
+header a{
+    color: white;
 }
 .cabeçalho{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     justify-content: space-around;
-
 }
-.cabeçalholist nav ul li{
+.navegaçao nav ul li{
     display: inline;
-    margin-left: 20px;
+    margin-left: 50px;
 }
-#quemsomos{
-    background-color: rgb(248, 233, 255);
+header a:hover{
+    color: black;
+}
+/* cabeçalho */
+
+/* apresentação */
+#apresentaçao{
+    background-color: rgb(160, 114, 182, 0.5);
     margin-top: 86px;
     display: flex;
-    border: solid 2px gray;
 }
-#quemsomos img{
+#apresentaçao img{
     height: 350px;
+    margin-right: 40px;
 }
+/* apresentaçao */
+
+/* produtos */
 .nossosprodutos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    border: solid 2px gray;
 }
 #produtos h2 {
     text-align: center;
@@ -39,9 +57,60 @@ header{
 .nossosprodutos img {
     height: 250px;
     width: 400px;
+    border-radius: 200px;
 }
 .nossosprodutos div{
     margin: 20px;
-    border: solid 2px gray;
     text-align: center;
 }
+.nossosprodutos img:hover{
+    border-radius: 0px;
+}
+/* produtos */
+
+/* formulario */
+.logos img{
+    height: 44px;
+}
+#div_pai_do_formulario{
+    display: flex;
+    justify-content: space-around;
+}
+#div1 form{
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+}
+form input, form textarea, form button{
+    width: 350px;
+    height: 50px;
+    margin: 10px;
+}
+form button{
+    background-color: hwb(270 0% 0%);
+    cursor: pointer;
+}
+#div2 li{
+    margin: 10px;
+    display: inline;
+    width: 350px;
+    margin-left: 30px;
+}
+#div2 li a{
+    text-decoration: none;
+}
+form textarea{
+    resize: none;
+}
+input:focus, textarea:focus{
+    outline-color: red;
+}
+/* formulario */
+
+/* rodape */
+footer{
+    background-color: rgb(39, 24, 87, 0.5);
+    padding: 10px;
+    /* width: 100%; */
+}
+/* rodape */
